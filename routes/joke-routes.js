@@ -1,3 +1,16 @@
+/**
+ * This approach is also a pretty major departure
+ * from the code we teach. Express has a nice router
+ * included and we should use it.
+ *
+ * Students can also better understand the import/export
+ * syntax by importing named exports from the controller.
+ *
+ * This code also clearly shows the student RESTful routing.
+ * Controller functions share a path, but have differing
+ * methods.
+ */
+
 import { Router } from 'express';
 import {
   createJoke,

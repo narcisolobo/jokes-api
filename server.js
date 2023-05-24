@@ -1,3 +1,10 @@
+/**
+ * The biggest change here is the new start() function.
+ * We could use a little more understanding of how to
+ * handle errors. This approach shows the student a little bit
+ * of that.
+ */
+
 import express from 'express';
 import dotenv from 'dotenv';
 import dbConnect from './config/db-connect.js';

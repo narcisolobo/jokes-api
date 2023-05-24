@@ -1,3 +1,26 @@
+/**
+ * Some major differences here - all functions are
+ * written with async/await syntax. Again, I think
+ * this approach is easier for beginners to understand.
+ *
+ * All responses set a status code - this is important
+ * for students to do early on. It's a must when handling
+ * errors on the front end with Axios.
+ *
+ * JSON response bodies are not nested in an additional
+ * object - this eliminates an extra step in the front end
+ * when the student goes full-stack.
+ *
+ * Different choices for Mongoose query functions with
+ * getOneJoke, updateOneJoke, and deleteOneJoke. I use
+ * the versions that expect an id as an argument. This
+ * simplifies the code one step further.
+ *
+ * Finally, all functions are exported in one line at
+ * the bottom of the file to reduce repetition and clean
+ * up the code.
+ */
+
 import Joke from '../models/joke-model.js';
 
 async function createJoke(req, res) {

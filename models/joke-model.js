@@ -1,3 +1,8 @@
+/**
+ * The only change here - I import only the pieces
+ * we need, rather than the entire mongoose package.
+ */
+
 import { model, Schema } from 'mongoose';
 
 const jokeSchema = new Schema(
