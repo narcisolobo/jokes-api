@@ -12,3 +12,5 @@
 - The routes file uses the router that's included with Express. The result is a very DRY, clean routes file.
 - The server does not use the `urlencoded` middleware. All our requests have json bodies. `urlencoded` is for parsing HTML form data primarily.
 - Finally, `app.listen()` is encapsulated in an async/await function along with the database connection function. This was done to handle any connection errors when attempting to spin up the server and/or when connecting to the database.
+
+This approach was written with an intention to simplify and to use a more modern syntax, both with the use of ES Modules and async/await.
