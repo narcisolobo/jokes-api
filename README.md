@@ -2,6 +2,11 @@
 
 ## Major Differences
 - I used the ES Module syntax for a unified approach to the front and back ends. All it takes is one additional property in the package.json.
+- Nodemon is installed as a dev dependency, and a "dev" script is written in package.json. This introduces the student to writing npm scripts, and will be the same command in Vite - `npm run dev`.
+  
+  ```json
+  "dev": "nodemon server.js"
+  ```
 - Connecting to the database is done in an async/await function.
 - All controller functions use async/await as well - writing code this way feels more familiar to the beginner. It more closely resembles synchronous code.
 - The routes file uses the router that's included with Express. The result is a very DRY, clean routes file.
